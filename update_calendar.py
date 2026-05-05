@@ -20,14 +20,28 @@ def parse_page(code, suffix):
     if not html:
         return
 
-    text = BeautifulSoup(html, "html.parser").get_text(" ")
-    month = int(code[2:4])
+    soup = BeautifulSoup(html, "html.parser")
 
-    for tenor in TENORS:
-        for m in re.finditer(rf"([A-Z][a-z]{{2}}\.\s*\d{{1,2}}).*?{tenor}", text):
-            day = int(re.search(r"\d{1,2}", m.group(1)).group())
-            dt = datetime(2026, month, day, 12, 35, tzinfo=JST)
-            events.append((dt, tenor, url))
+    tables = soup.find_all("table")
+
+    for table in tables:
+        rows = table.find_all("tr")
+
+        for row in rows:
+            cols = row.find_all(["td","th"])
+            text = " ".join([c.get_text(" ", strip=True) for c in cols])
+
+            for tenor in TENORS:
+                if tenor in text.lower():
+                    m = re.search(r"(\d{1,2})", text)
+                    if not m:
+                        continue
+
+                    day = int(m.group(1))
+                    month = int(code[2:4])
+
+                    dt = datetime(2026, month, day, 12, 35, tzinfo=JST)
+                    events.append((dt, tenor, url))
 
 def build_ics():
     lines = [
