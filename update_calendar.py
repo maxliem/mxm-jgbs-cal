@@ -5,11 +5,10 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 JST = ZoneInfo("Asia/Tokyo")
-
 BASE = "https://www.mof.go.jp/english/policy/jgbs/auction/calendar/"
 MONTHS = [f"26{m:02d}" for m in range(1, 13)]
 
-TENOR_PATTERNS = [
+TENORS = [
     ("2Y", "2-year"),
     ("5Y", "5-year"),
     ("10Y", "10-year"),
@@ -24,50 +23,44 @@ events = []
 def fetch(url):
     try:
         r = requests.get(url, timeout=20)
-        if r.status_code == 200:
-            return r.text
+        return r.text if r.status_code == 200 else None
     except Exception:
-        pass
-    return None
+        return None
 
 
-def esc(text):
-    return (
-        text.replace("\\", "\\\\")
-        .replace(";", r"\;")
-        .replace(",", r"\,")
-        .replace("\n", r"\n")
-    )
+def esc(t):
+    return t.replace("\\", "\\\\").replace(";", r"\;").replace(",", r"\,").replace("\n", r"\n")
 
 
 def extract_series(text):
-    # Official Japanese style: （第173回） or (第173回)
-    m = re.search(r"[（(]\s*第\s*(\d+)\s*回\s*[)）]", text)
-    if m:
-        return m.group(1)
-
-    # Fallback: plain parenthesis number, e.g. (173)
-    m = re.search(r"\((\d{2,4})\)", text)
-    if m:
-        return m.group(1)
-
-    return None
+    m = re.search(r"\((\d{1,4})\)", text)
+    return m.group(1) if m else None
 
 
-def classify(text, tenor_short):
+def classify(text, tenor_short, series):
     t = text.lower()
-    series = extract_series(text)
 
     if "liquidity enhancement" in t:
         base = f"{tenor_short} Liquidity Enhancement"
-    elif "climate" in t or "transition" in t or "green" in t:
+    elif "climate transition bonds" in t:
         base = f"{tenor_short} Green JGB auction"
     else:
         base = f"{tenor_short} JGB auction"
 
-    if series:
-        return f"{base} (#{series})"
-    return base
+    return f"{base} (#{series})" if series else base
+
+
+def is_valid_row(text):
+    t = text.lower()
+
+    # exclude non-JGB rows
+    bad = [
+        "inflation-indexed",
+        "treasury discount",
+        "national forest",
+        "borrowing of special account",
+    ]
+    return not any(x in t for x in bad)
 
 
 def parse_page(code, suffix):
@@ -81,10 +74,11 @@ def parse_page(code, suffix):
 
     for row in soup.find_all("tr"):
         cells = row.find_all(["td", "th"])
-        text = " ".join(c.get_text(" ", strip=True) for c in cells)
-        text_l = text.lower()
+        if len(cells) < 2:
+            continue
 
-        if not text.strip():
+        text = " ".join(c.get_text(" ", strip=True) for c in cells)
+        if not is_valid_row(text):
             continue
 
         day_match = re.search(r"\b(\d{1,2})\b", text)
@@ -93,11 +87,18 @@ def parse_page(code, suffix):
 
         day = int(day_match.group(1))
 
-        for tenor_short, tenor_long in TENOR_PATTERNS:
-            if tenor_long in text_l:
-                dt = datetime(2026, month, day, 12, 35, tzinfo=JST)
-                summary = classify(text, tenor_short)
-                events.append((dt, summary, url, text))
+        for tenor_short, tenor_long in TENORS:
+            if tenor_long.lower() not in text.lower():
+                continue
+
+            # require real auction row
+            if "detail" not in text.lower() and "liquidity enhancement" not in text.lower():
+                continue
+
+            dt = datetime(2026, month, day, 12, 35, tzinfo=JST)
+            series = extract_series(text)
+            summary = classify(text, tenor_short, series)
+            events.append((dt, summary, url, text))
 
 
 def build_ics():
@@ -113,7 +114,7 @@ def build_ics():
 
     seen = set()
 
-    for dt, summary, url, raw_text in sorted(events, key=lambda x: (x[0], x[1])):
+    for dt, summary, url, raw in sorted(events, key=lambda x: (x[0], x[1])):
         key = (dt.strftime("%Y%m%d"), summary)
         if key in seen:
             continue
@@ -129,7 +130,7 @@ def build_ics():
             f"DTSTART;TZID=Asia/Tokyo:{dt.strftime('%Y%m%dT%H%M%S')}",
             f"DTEND;TZID=Asia/Tokyo:{end.strftime('%Y%m%dT%H%M%S')}",
             f"SUMMARY:{esc(summary)}",
-            f"DESCRIPTION:{esc(raw_text)}",
+            f"DESCRIPTION:{esc(raw[:300])}",
             f"URL:{url}",
             "BEGIN:VALARM",
             "TRIGGER:-PT3H",
