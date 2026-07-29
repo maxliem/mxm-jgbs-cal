@@ -278,30 +278,36 @@ def parse_fed() -> list[datetime]:
 
 def parse_ecb() -> list[datetime]:
     """
-    Select only ECB monetary-policy Day 2 rows that explicitly say
-    'followed by press conference'.
+    Extract only ECB monetary-policy meeting Day 2 dates followed
+    by a press conference.
     """
     soup = BeautifulSoup(fetch(ECB_URL), "html.parser")
-    text = soup.get_text("\n", strip=True)
-
-    lines = [
-        normalise_spaces(line)
-        for line in text.splitlines()
-        if normalise_spaces(line)
-    ]
+    text = normalise_spaces(soup.get_text(" ", strip=True))
 
     meetings: list[datetime] = []
 
-    for index, line in enumerate(lines):
-        if not re.fullmatch(r"\d{2}/\d{2}/20\d{2}", line):
+    # Divide the page into entries beginning with DD/MM/YYYY.
+    entries = re.split(
+        r"(?=(?:0[1-9]|[12]\d|3[01])/"
+        r"(?:0[1-9]|1[0-2])/20\d{2})",
+        text,
+    )
+
+    for entry in entries:
+        date_match = re.match(
+            r"(\d{2}/\d{2}/20\d{2})",
+            entry,
+        )
+
+        if not date_match:
             continue
 
-        if index + 1 >= len(lines):
-            continue
-
-        description = lines[index + 1].lower()
+        description = entry[:500].lower()
 
         if "monetary policy meeting" not in description:
+            continue
+
+        if "day 2" not in description:
             continue
 
         if "followed by press conference" not in description:
@@ -310,84 +316,121 @@ def parse_ecb() -> list[datetime]:
         if "non-monetary" in description:
             continue
 
-        date = datetime.strptime(line, "%d/%m/%Y")
-
-        decision = datetime(
-            date.year,
-            date.month,
-            date.day,
-            14,
-            15,
-            tzinfo=FRANKFURT,
+        date = datetime.strptime(
+            date_match.group(1),
+            "%d/%m/%Y",
         )
 
-        meetings.append(decision)
+        meetings.append(
+            datetime(
+                date.year,
+                date.month,
+                date.day,
+                14,
+                15,
+                tzinfo=FRANKFURT,
+            )
+        )
 
-    return sorted(set(meetings))
+    meetings = sorted(set(meetings))
+
+    print("ECB parsed dates:")
+    for meeting in meetings:
+        print(" ", meeting.date())
+
+    return meetings
 
 
 def parse_rba() -> list[datetime]:
     """
-    Parse only the Monetary Policy Board column and use the final
-    day of each two-day meeting.
+    Parse official RBA Monetary Policy Board meeting ranges.
+    The decision occurs on the second day.
     """
     soup = BeautifulSoup(fetch(RBA_URL), "html.parser")
+    text = normalise_spaces(soup.get_text(" ", strip=True))
+
     meetings: list[datetime] = []
 
-    for heading in soup.find_all(
-        ["h2", "h3"],
-        string=re.compile(r"Board meeting schedules 20\d{2}", re.I),
-    ):
-        year_match = re.search(r"(20\d{2})", heading.get_text(" ", strip=True))
+    month_lookup = {
+        "january": 1,
+        "february": 2,
+        "march": 3,
+        "april": 4,
+        "may": 5,
+        "june": 6,
+        "july": 7,
+        "august": 8,
+        "september": 9,
+        "october": 10,
+        "november": 11,
+        "december": 12,
+    }
+
+    # Separate each annual schedule section.
+    year_sections = re.split(
+        r"(?=Board meeting schedules 20\d{2})",
+        text,
+        flags=re.I,
+    )
+
+    for section in year_sections:
+        year_match = re.match(
+            r"Board meeting schedules (20\d{2})",
+            section,
+            flags=re.I,
+        )
+
         if not year_match:
             continue
 
         year = int(year_match.group(1))
 
-        if year < datetime.now(JST).year:
-            continue
+        # Stop at the next section if it survived in this text block.
+        section = re.split(
+            r"Board meeting schedules 20\d{2}",
+            section[len(year_match.group(0)):],
+            maxsplit=1,
+            flags=re.I,
+        )[0]
 
-        table = heading.find_next("table")
-        if table is None:
-            continue
+        # Match ranges such as:
+        # 2–3 February
+        # 16-17 March
+        matches = re.finditer(
+            r"(?<!\d)"
+            r"(\d{1,2})\s*[\-–—]\s*(\d{1,2})\s+"
+            r"(January|February|March|April|May|June|"
+            r"July|August|September|October|November|December)"
+            r"(?!\s+20\d{2})",
+            section,
+            flags=re.I,
+        )
 
-        for row in table.select("tbody tr"):
-            cells = [
-                normalise_spaces(cell.get_text(" ", strip=True))
-                for cell in row.find_all(["th", "td"])
-            ]
-
-            if len(cells) < 2:
-                continue
-
-            monetary_policy_cell = cells[1]
-
-            match = re.search(
-                r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s+"
-                r"(January|February|March|April|May|June|"
-                r"July|August|September|October|November|December)",
-                monetary_policy_cell,
-                re.I,
-            )
-
-            if not match:
-                continue
-
+        for match in matches:
             decision_day = int(match.group(2))
-            month = month_number(match.group(3))
+            month = month_lookup[match.group(3).lower()]
 
-            decision = datetime(
-                year,
-                month,
-                decision_day,
-                14,
-                30,
-                tzinfo=SYDNEY,
-            )
+            try:
+                meeting = datetime(
+                    year,
+                    month,
+                    decision_day,
+                    14,
+                    30,
+                    tzinfo=SYDNEY,
+                )
+            except ValueError:
+                continue
 
-            meetings.append(decision)
+            meetings.append(meeting)
 
-    return sorted(set(meetings))
+    meetings = sorted(set(meetings))
+
+    print("RBA parsed dates:")
+    for meeting in meetings:
+        print(" ", meeting.date())
+
+    return meetings
 
 
 def validate(
