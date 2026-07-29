@@ -96,18 +96,15 @@ def unique_sorted(
 
 def parse_fed() -> list[datetime]:
     """
-    Parse official FOMC meeting ranges.
-
-    Only date ranges such as January 27-28 are accepted.
-    The decision occurs on the second day of the meeting.
+    Parse current and future official FOMC meeting ranges.
+    The decision occurs on the second day at 14:00 New York time.
     """
     soup = BeautifulSoup(fetch(FED_URL), "html.parser")
     text = normalise_spaces(soup.get_text(" ", strip=True))
 
     meetings: list[datetime] = []
+    current_year = datetime.now(UTC).year
 
-    # Split at year headings such as:
-    # 2026 FOMC Meetings
     year_matches = list(
         re.finditer(
             r"\b(20\d{2})\s+FOMC\s+Meetings\b",
@@ -119,6 +116,10 @@ def parse_fed() -> list[datetime]:
     for index, year_match in enumerate(year_matches):
         year = int(year_match.group(1))
 
+        # Ignore historical schedules.
+        if year < current_year:
+            continue
+
         section_start = year_match.end()
 
         if index + 1 < len(year_matches):
@@ -128,10 +129,6 @@ def parse_fed() -> list[datetime]:
 
         section = text[section_start:section_end]
 
-        # Examples:
-        # January 27-28
-        # March 17-18*
-        # October 27–28
         pattern = re.compile(
             r"\b("
             + "|".join(MONTHS.keys())
@@ -146,13 +143,13 @@ def parse_fed() -> list[datetime]:
 
         for match in pattern.finditer(section):
             month = MONTHS[match.group(1).lower()]
-            second_day = int(match.group(3))
+            decision_day = int(match.group(3))
 
             try:
                 decision = datetime(
                     year,
                     month,
-                    second_day,
+                    decision_day,
                     14,
                     0,
                     tzinfo=NEW_YORK,
@@ -251,58 +248,100 @@ def parse_ecb() -> list[datetime]:
 
 def parse_rba() -> list[datetime]:
     """
-    Parse official RBA Monetary Policy Board meeting ranges.
-
-    Only the Monetary Policy Board date ranges are used.
-    The decision occurs on the second day at 14:30 Sydney time.
+    Parse only the RBA Monetary Policy Board column.
+    The decision occurs on the second meeting day at 14:30 Sydney time.
     """
     soup = BeautifulSoup(fetch(RBA_URL), "html.parser")
 
     meetings: list[datetime] = []
+    current_year = datetime.now(UTC).year
 
-    # Preferred method: parse the official HTML tables.
     for table in soup.find_all("table"):
-        table_text = normalise_spaces(
-            table.get_text(" ", strip=True)
-        ).lower()
+        headers = [
+            normalise_spaces(th.get_text(" ", strip=True)).lower()
+            for th in table.find_all("th")
+        ]
 
-        if "monetary policy board" not in table_text:
+        if not any(
+            "monetary policy board" in header
+            for header in headers
+        ):
             continue
 
-        year = find_nearest_rba_year(table)
+        heading = table.find_previous(
+            ["h1", "h2", "h3", "h4", "caption"]
+        )
 
-        if year is None:
+        year = None
+
+        while heading is not None:
+            heading_text = normalise_spaces(
+                heading.get_text(" ", strip=True)
+            )
+
+            year_match = re.search(
+                r"Board meeting schedules\s+(20\d{2})",
+                heading_text,
+                flags=re.I,
+            )
+
+            if year_match:
+                year = int(year_match.group(1))
+                break
+
+            heading = heading.find_previous(
+                ["h1", "h2", "h3", "h4", "caption"]
+            )
+
+        if year is None or year < current_year:
             continue
 
-        for row in table.find_all("tr"):
-            cells = [
-                normalise_spaces(
-                    cell.get_text(" ", strip=True)
-                )
-                for cell in row.find_all(["th", "td"])
-            ]
+        rows = table.find_all("tr")
 
+        for row in rows:
+            cells = row.find_all(["th", "td"])
+
+            # Expected columns:
+            # 0 Month
+            # 1 Monetary Policy Board
+            # 2 Payments System Board
             if len(cells) < 2:
                 continue
 
-            # Column 0 = month
-            # Column 1 = Monetary Policy Board
-            monetary_policy_cell = cells[1]
-
-            meeting_date = parse_rba_range(
-                monetary_policy_cell,
-                year,
+            monetary_policy_text = normalise_spaces(
+                cells[1].get_text(" ", strip=True)
             )
 
-            if meeting_date is not None:
-                meetings.append(meeting_date)
+            match = re.search(
+                r"(\d{1,2})"
+                r"\s*[\-–—]\s*"
+                r"(\d{1,2})"
+                r"\s+("
+                + "|".join(MONTHS.keys())
+                + r")\b",
+                monetary_policy_text,
+                flags=re.I,
+            )
 
-    # Fallback for changes in the RBA HTML/table structure.
-    if not meetings:
-        text = normalise_spaces(
-            soup.get_text(" ", strip=True)
-        )
-        meetings = parse_rba_from_text(text)
+            if not match:
+                continue
+
+            decision_day = int(match.group(2))
+            month = MONTHS[match.group(3).lower()]
+
+            try:
+                decision = datetime(
+                    year,
+                    month,
+                    decision_day,
+                    14,
+                    30,
+                    tzinfo=SYDNEY,
+                )
+            except ValueError:
+                continue
+
+            meetings.append(decision)
 
     meetings = unique_sorted(meetings)
 
