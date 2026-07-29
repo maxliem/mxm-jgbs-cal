@@ -195,169 +195,199 @@ def month_number(name: str) -> int:
 
 
 def parse_fed() -> list[datetime]:
-    html = fetch(FED_URL)
-    soup = BeautifulSoup(html, "html.parser")
-    text = normalise_spaces(
-        soup.get_text(" ", strip=True)
-    )
-
+    soup = BeautifulSoup(fetch(FED_URL), "html.parser")
     meetings: list[datetime] = []
 
-    # Searches for patterns such as:
-    # January 27-28 2026
-    # March 17-18*
-    pattern = re.compile(
-        r"""
-        \b
-        (January|February|March|April|May|June|
-         July|August|September|October|November|
-         December)
-        \s+
-        (\d{1,2})
-        \s*[-–]\s*
-        (\d{1,2})
-        \*?
-        (?:\s*,?\s*(2026|2027|2028))?
-        \b
-        """,
-        re.IGNORECASE | re.VERBOSE,
+    months = {
+        "january": 1,
+        "february": 2,
+        "march": 3,
+        "april": 4,
+        "may": 5,
+        "june": 6,
+        "july": 7,
+        "august": 8,
+        "september": 9,
+        "october": 10,
+        "november": 11,
+        "december": 12,
+    }
+
+    headings = soup.find_all(
+        ["h3", "h4"],
+        string=re.compile(r"20\d{2}\s+FOMC Meetings", re.I),
     )
 
-    current_year = 2026
-
-    for match in pattern.finditer(text):
-        month_name = match.group(1)
-        end_day = int(match.group(3))
-        explicit_year = match.group(4)
-
-        if explicit_year:
-            current_year = int(explicit_year)
-
-        if current_year < 2026:
+    for heading in headings:
+        year_match = re.search(r"(20\d{2})", heading.get_text(" ", strip=True))
+        if not year_match:
             continue
 
-        decision = datetime(
-            current_year,
-            month_number(month_name),
-            end_day,
-            14,
-            0,
-            tzinfo=NEW_YORK,
-        )
+        year = int(year_match.group(1))
 
-        if decision not in meetings:
+        if year < datetime.now(JST).year:
+            continue
+
+        current_month: int | None = None
+
+        for node in heading.find_all_next():
+            if node is not heading and node.name in {"h3", "h4"}:
+                if re.search(
+                    r"20\d{2}\s+FOMC Meetings",
+                    node.get_text(" ", strip=True),
+                    re.I,
+                ):
+                    break
+
+            text = normalise_spaces(node.get_text(" ", strip=True))
+
+            if text.lower() in months:
+                current_month = months[text.lower()]
+                continue
+
+            if current_month is None:
+                continue
+
+            # Accept only a standalone two-day meeting range.
+            match = re.fullmatch(
+                r"(\d{1,2})\s*[-–]\s*(\d{1,2})\*?",
+                text,
+            )
+
+            if not match:
+                continue
+
+            decision_day = int(match.group(2))
+
+            try:
+                decision = datetime(
+                    year,
+                    current_month,
+                    decision_day,
+                    14,
+                    0,
+                    tzinfo=NEW_YORK,
+                )
+            except ValueError:
+                continue
+
             meetings.append(decision)
+            current_month = None
 
-    return sorted(meetings)
-
+    return sorted(set(meetings))
 
 def parse_ecb() -> list[datetime]:
-    html = fetch(ECB_URL)
-    soup = BeautifulSoup(html, "html.parser")
-    text = normalise_spaces(
-        soup.get_text(" ", strip=True)
-    )
+    """
+    Select only ECB monetary-policy Day 2 rows that explicitly say
+    'followed by press conference'.
+    """
+    soup = BeautifulSoup(fetch(ECB_URL), "html.parser")
+    text = soup.get_text("\n", strip=True)
+
+    lines = [
+        normalise_spaces(line)
+        for line in text.splitlines()
+        if normalise_spaces(line)
+    ]
 
     meetings: list[datetime] = []
 
-    # The official ECB page places a date near:
-    # "monetary policy meeting ... Day 2,
-    # followed by press conference"
-    pattern = re.compile(
-        r"""
-        \b
-        (\d{1,2})[./]
-        (\d{1,2})[./]
-        (20\d{2})
-        \b
-        (?:
-            .{0,300}?
-        )
-        monetary\ policy\ meeting
-        (?:
-            .{0,200}?
-        )
-        followed\ by\ press\ conference
-        """,
-        re.IGNORECASE | re.VERBOSE,
-    )
+    for index, line in enumerate(lines):
+        if not re.fullmatch(r"\d{2}/\d{2}/20\d{2}", line):
+            continue
 
-    for match in pattern.finditer(text):
-        day = int(match.group(1))
-        month = int(match.group(2))
-        year = int(match.group(3))
+        if index + 1 >= len(lines):
+            continue
+
+        description = lines[index + 1].lower()
+
+        if "monetary policy meeting" not in description:
+            continue
+
+        if "followed by press conference" not in description:
+            continue
+
+        if "non-monetary" in description:
+            continue
+
+        date = datetime.strptime(line, "%d/%m/%Y")
 
         decision = datetime(
-            year,
-            month,
-            day,
+            date.year,
+            date.month,
+            date.day,
             14,
             15,
             tzinfo=FRANKFURT,
         )
 
-        if decision not in meetings:
-            meetings.append(decision)
+        meetings.append(decision)
 
-    return sorted(meetings)
+    return sorted(set(meetings))
 
 
 def parse_rba() -> list[datetime]:
-    html = fetch(RBA_URL)
-    soup = BeautifulSoup(html, "html.parser")
-    text = normalise_spaces(
-        soup.get_text(" ", strip=True)
-    )
-
+    """
+    Parse only the Monetary Policy Board column and use the final
+    day of each two-day meeting.
+    """
+    soup = BeautifulSoup(fetch(RBA_URL), "html.parser")
     meetings: list[datetime] = []
 
-    # Examples:
-    # February 2–3 February
-    # March 16–17 March
-    pattern = re.compile(
-        r"""
-        \b
-        (January|February|March|April|May|June|
-         July|August|September|October|November|
-         December)
-        \s+
-        (\d{1,2})
-        \s*[-–]\s*
-        (\d{1,2})
-        (?:\s+
-            (January|February|March|April|May|June|
-             July|August|September|October|November|
-             December)
-        )?
-        (?:\s+(20\d{2}))?
-        \b
-        """,
-        re.IGNORECASE | re.VERBOSE,
-    )
+    for heading in soup.find_all(
+        ["h2", "h3"],
+        string=re.compile(r"Board meeting schedules 20\d{2}", re.I),
+    ):
+        year_match = re.search(r"(20\d{2})", heading.get_text(" ", strip=True))
+        if not year_match:
+            continue
 
-    for match in pattern.finditer(text):
-        first_month = match.group(1)
-        end_day = int(match.group(3))
-        repeated_month = match.group(4)
-        year = int(match.group(5) or 2026)
+        year = int(year_match.group(1))
 
-        actual_month = (
-            repeated_month or first_month
-        )
+        if year < datetime.now(JST).year:
+            continue
 
-        decision = datetime(
-            year,
-            month_number(actual_month),
-            end_day,
-            14,
-            30,
-            tzinfo=SYDNEY,
-        )
+        table = heading.find_next("table")
+        if table is None:
+            continue
 
-        if decision not in meetings:
+        for row in table.select("tbody tr"):
+            cells = [
+                normalise_spaces(cell.get_text(" ", strip=True))
+                for cell in row.find_all(["th", "td"])
+            ]
+
+            if len(cells) < 2:
+                continue
+
+            monetary_policy_cell = cells[1]
+
+            match = re.search(
+                r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s+"
+                r"(January|February|March|April|May|June|"
+                r"July|August|September|October|November|December)",
+                monetary_policy_cell,
+                re.I,
+            )
+
+            if not match:
+                continue
+
+            decision_day = int(match.group(2))
+            month = month_number(match.group(3))
+
+            decision = datetime(
+                year,
+                month,
+                decision_day,
+                14,
+                30,
+                tzinfo=SYDNEY,
+            )
+
             meetings.append(decision)
 
-    return sorted(meetings)
+    return sorted(set(meetings))
 
 
 def validate(
@@ -365,25 +395,42 @@ def validate(
     ecb: list[datetime],
     rba: list[datetime],
 ) -> None:
+    current_year = datetime.now(JST).year
+
+    fed_current = [x for x in fed if x.year == current_year]
+    ecb_current = [x for x in ecb if x.year == current_year]
+    rba_current = [x for x in rba if x.year == current_year]
+
     errors: list[str] = []
 
-    if not fed:
+    if not 6 <= len(fed_current) <= 10:
         errors.append(
-            "No Fed meetings were found."
+            f"Suspicious Fed count for {current_year}: "
+            f"{len(fed_current)}"
         )
 
-    if not ecb:
+    if not 4 <= len(ecb_current) <= 10:
         errors.append(
-            "No ECB meetings were found."
+            f"Suspicious ECB count for {current_year}: "
+            f"{len(ecb_current)}"
         )
 
-    if not rba:
+    if not 6 <= len(rba_current) <= 10:
         errors.append(
-            "No RBA meetings were found."
+            f"Suspicious RBA count for {current_year}: "
+            f"{len(rba_current)}"
         )
+
+    for name, dates in {
+        "Fed": fed,
+        "ECB": ecb,
+        "RBA": rba,
+    }.items():
+        if len(dates) != len(set(dates)):
+            errors.append(f"Duplicate {name} dates detected")
 
     if errors:
-        raise RuntimeError(" ".join(errors))
+        raise RuntimeError("; ".join(errors))
 
 
 def build_calendar() -> None:
