@@ -160,25 +160,26 @@ def parse_fed() -> list[datetime]:
             meetings.append(decision)
 
     meetings = unique_sorted(meetings)
+
     # Remove accidental first-day entry when two consecutive
-# January dates were parsed for the same FOMC meeting.
-filtered: list[datetime] = []
+    # January dates were parsed for the same FOMC meeting.
+    filtered: list[datetime] = []
 
-for meeting in meetings:
-    if (
-        meeting.month == 1
-        and any(
-            other.year == meeting.year
-            and other.month == 1
-            and other.day == meeting.day + 1
-            for other in meetings
-        )
-    ):
-        continue
+    for meeting in meetings:
+        if (
+            meeting.month == 1
+            and any(
+                other.year == meeting.year
+                and other.month == 1
+                and other.day == meeting.day + 1
+                for other in meetings
+            )
+        ):
+            continue
 
-    filtered.append(meeting)
+        filtered.append(meeting)
 
-meetings = filtered
+    meetings = filtered
 
     print("Fed parsed dates:", flush=True)
     for meeting in meetings:
