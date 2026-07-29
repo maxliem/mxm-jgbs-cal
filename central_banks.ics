@@ -1,0 +1,2848 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//maxliem//Central Bank Feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fed ECB RBA
+X-WR-TIMEZONE:Asia/Tokyo
+X-PUBLISHED-TTL:PT6H
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+BEGIN:VEVENT
+UID:fc535e51f56dfa90@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260127T040000
+DTEND;TZID=Asia/Tokyo:20260127T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:88f3f1250219bdad@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260127T043000
+DTEND;TZID=Asia/Tokyo:20260127T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c2743f549af19490@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260128T040000
+DTEND;TZID=Asia/Tokyo:20260128T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f6a757cb56d82d97@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260128T043000
+DTEND;TZID=Asia/Tokyo:20260128T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e8346d677dfd474d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260129T040000
+DTEND;TZID=Asia/Tokyo:20260129T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2c0b90ae8e47ad16@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260129T043000
+DTEND;TZID=Asia/Tokyo:20260129T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4689ac5d66636246@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260130T040000
+DTEND;TZID=Asia/Tokyo:20260130T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b5e84f3be386a776@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260130T043000
+DTEND;TZID=Asia/Tokyo:20260130T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:073d91af3709a26f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260201T040000
+DTEND;TZID=Asia/Tokyo:20260201T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8d5b9564f1a04760@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260201T043000
+DTEND;TZID=Asia/Tokyo:20260201T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5cb968ee4a1ee871@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260317T030000
+DTEND;TZID=Asia/Tokyo:20260317T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:47193a207687bd60@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260317T033000
+DTEND;TZID=Asia/Tokyo:20260317T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:60d084a5ba634625@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260318T030000
+DTEND;TZID=Asia/Tokyo:20260318T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:862576f281ab322e@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260318T033000
+DTEND;TZID=Asia/Tokyo:20260318T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:acbe3701721734c4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260319T030000
+DTEND;TZID=Asia/Tokyo:20260319T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c490fd10d129f6c0@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260319T033000
+DTEND;TZID=Asia/Tokyo:20260319T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:17edeb9d4f9e54f9@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260320T030000
+DTEND;TZID=Asia/Tokyo:20260320T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c60c7edd76dd629f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260320T033000
+DTEND;TZID=Asia/Tokyo:20260320T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6882bae5083c642c@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260321T030000
+DTEND;TZID=Asia/Tokyo:20260321T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c3a37072b85c9050@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260321T033000
+DTEND;TZID=Asia/Tokyo:20260321T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4dfa1d51482198f4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260323T030000
+DTEND;TZID=Asia/Tokyo:20260323T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f8db9968bdcab928@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260323T033000
+DTEND;TZID=Asia/Tokyo:20260323T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40dea394af6c0b2b@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260429T030000
+DTEND;TZID=Asia/Tokyo:20260429T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0b288b407af60432@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260429T033000
+DTEND;TZID=Asia/Tokyo:20260429T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5e001f209b9d69c8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260430T030000
+DTEND;TZID=Asia/Tokyo:20260430T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9b1ea522bd5589d6@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260430T033000
+DTEND;TZID=Asia/Tokyo:20260430T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4c77cfd6f915e2d0@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260502T030000
+DTEND;TZID=Asia/Tokyo:20260502T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dee91d7b2eb077f3@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260502T033000
+DTEND;TZID=Asia/Tokyo:20260502T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ae3b9b3eec6b81b0@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260504T030000
+DTEND;TZID=Asia/Tokyo:20260504T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b71d1bce13f184ea@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260504T033000
+DTEND;TZID=Asia/Tokyo:20260504T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d1a92aaf15839109@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260505T030000
+DTEND;TZID=Asia/Tokyo:20260505T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eb75f26b986c5287@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260505T033000
+DTEND;TZID=Asia/Tokyo:20260505T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8b65096ad3a4695e@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260508T030000
+DTEND;TZID=Asia/Tokyo:20260508T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a4e0020146cf34b9@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260508T033000
+DTEND;TZID=Asia/Tokyo:20260508T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9fb257bc8426ade4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260610T030000
+DTEND;TZID=Asia/Tokyo:20260610T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:27002f9b0eb16c44@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260610T033000
+DTEND;TZID=Asia/Tokyo:20260610T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d48a98fb4d3aeda5@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260613T030000
+DTEND;TZID=Asia/Tokyo:20260613T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:afc89fcd895e63ed@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260613T033000
+DTEND;TZID=Asia/Tokyo:20260613T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e5a51060702a67ec@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260615T030000
+DTEND;TZID=Asia/Tokyo:20260615T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c6b7ce7b14450836@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260615T033000
+DTEND;TZID=Asia/Tokyo:20260615T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:be005ba9f146a9c6@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260616T030000
+DTEND;TZID=Asia/Tokyo:20260616T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4330482f27bd4fb6@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260616T033000
+DTEND;TZID=Asia/Tokyo:20260616T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d492c0975d8712d4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260617T030000
+DTEND;TZID=Asia/Tokyo:20260617T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b6742d12f4c01e37@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260617T033000
+DTEND;TZID=Asia/Tokyo:20260617T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c7de8cdeac45e6b7@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260618T030000
+DTEND;TZID=Asia/Tokyo:20260618T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:85a5cbcd24bf24f2@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260618T033000
+DTEND;TZID=Asia/Tokyo:20260618T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6d2299d5bb8e3678@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260619T030000
+DTEND;TZID=Asia/Tokyo:20260619T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:93af2ab2bd47f7b8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260619T033000
+DTEND;TZID=Asia/Tokyo:20260619T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:49a01682f8585bf8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260727T030000
+DTEND;TZID=Asia/Tokyo:20260727T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:42e890d08de70dc7@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260727T033000
+DTEND;TZID=Asia/Tokyo:20260727T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:174bcbfac5ecfe91@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260728T030000
+DTEND;TZID=Asia/Tokyo:20260728T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6ec050335370f5e1@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260728T033000
+DTEND;TZID=Asia/Tokyo:20260728T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:08e43a2e6cba9b22@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260729T030000
+DTEND;TZID=Asia/Tokyo:20260729T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:59e292353b8e55c1@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260729T033000
+DTEND;TZID=Asia/Tokyo:20260729T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c07d783d8ca905a8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260730T030000
+DTEND;TZID=Asia/Tokyo:20260730T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c931ce11f6278af7@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260730T033000
+DTEND;TZID=Asia/Tokyo:20260730T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1ef29cfc42e4503f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260731T030000
+DTEND;TZID=Asia/Tokyo:20260731T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f49629cc3c407ba8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260731T033000
+DTEND;TZID=Asia/Tokyo:20260731T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:61f15281ef2a0163@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260801T030000
+DTEND;TZID=Asia/Tokyo:20260801T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1f6de55fbcb008a7@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260801T033000
+DTEND;TZID=Asia/Tokyo:20260801T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4cfa067dbcd7ea54@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260916T030000
+DTEND;TZID=Asia/Tokyo:20260916T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:675e58738acc6488@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260916T033000
+DTEND;TZID=Asia/Tokyo:20260916T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4f9e69f7c263fda8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260917T030000
+DTEND;TZID=Asia/Tokyo:20260917T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c27ecc3dc7fce3fb@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260917T033000
+DTEND;TZID=Asia/Tokyo:20260917T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:84ba7b56f47e5925@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260918T030000
+DTEND;TZID=Asia/Tokyo:20260918T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6ef8d200383deaba@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260918T033000
+DTEND;TZID=Asia/Tokyo:20260918T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cc924878b7d985cf@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260919T030000
+DTEND;TZID=Asia/Tokyo:20260919T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4716f9bc9ba7aa83@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260919T033000
+DTEND;TZID=Asia/Tokyo:20260919T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e750139b4a3266e4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260921T030000
+DTEND;TZID=Asia/Tokyo:20260921T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0976d3e47194c68f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260921T033000
+DTEND;TZID=Asia/Tokyo:20260921T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:44ff68bf50a27d0c@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260922T030000
+DTEND;TZID=Asia/Tokyo:20260922T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:182be00fdb7266ed@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260922T033000
+DTEND;TZID=Asia/Tokyo:20260922T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:28f65c7b49668fa7@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260923T030000
+DTEND;TZID=Asia/Tokyo:20260923T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:06cc028b45be5954@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260923T033000
+DTEND;TZID=Asia/Tokyo:20260923T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:02adb54ac409dabe@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261028T030000
+DTEND;TZID=Asia/Tokyo:20261028T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:498514d18340ad22@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261028T033000
+DTEND;TZID=Asia/Tokyo:20261028T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e56f0ae7eb968dc8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261029T030000
+DTEND;TZID=Asia/Tokyo:20261029T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8649679508be16be@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261029T033000
+DTEND;TZID=Asia/Tokyo:20261029T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:83aa1ef050e7e2d9@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261030T030000
+DTEND;TZID=Asia/Tokyo:20261030T033000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:faf3da21379e4cf7@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261030T033000
+DTEND;TZID=Asia/Tokyo:20261030T043000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b663eaa04b0dff70@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261103T040000
+DTEND;TZID=Asia/Tokyo:20261103T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cccf984135902025@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261103T043000
+DTEND;TZID=Asia/Tokyo:20261103T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:49b190bee3f725cd@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261104T040000
+DTEND;TZID=Asia/Tokyo:20261104T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5b542a03484887fa@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261104T043000
+DTEND;TZID=Asia/Tokyo:20261104T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3ea64e65efc1e6e6@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261108T040000
+DTEND;TZID=Asia/Tokyo:20261108T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:45db431c73aa2a91@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261108T043000
+DTEND;TZID=Asia/Tokyo:20261108T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8e6f570531abe24a@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261209T040000
+DTEND;TZID=Asia/Tokyo:20261209T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3addf5f65346ff8b@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261209T043000
+DTEND;TZID=Asia/Tokyo:20261209T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:84e51d8d5f5deed4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261210T040000
+DTEND;TZID=Asia/Tokyo:20261210T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d79009a95759d434@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261210T043000
+DTEND;TZID=Asia/Tokyo:20261210T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4e1048ba15f002c9@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261211T040000
+DTEND;TZID=Asia/Tokyo:20261211T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1f942c5fd19da726@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261211T043000
+DTEND;TZID=Asia/Tokyo:20261211T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4c887a662eebcbf6@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261214T040000
+DTEND;TZID=Asia/Tokyo:20261214T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:55bba4f1874498da@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261214T043000
+DTEND;TZID=Asia/Tokyo:20261214T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5e9433b8b49b252d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261215T040000
+DTEND;TZID=Asia/Tokyo:20261215T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ea7435dfe1b32f63@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261215T043000
+DTEND;TZID=Asia/Tokyo:20261215T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3372cb531bc6b841@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261216T040000
+DTEND;TZID=Asia/Tokyo:20261216T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2d565f00723245a1@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261216T043000
+DTEND;TZID=Asia/Tokyo:20261216T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fb08fdde4b09d1ea@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261219T040000
+DTEND;TZID=Asia/Tokyo:20261219T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5fedc729b993121f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261219T043000
+DTEND;TZID=Asia/Tokyo:20261219T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:28b9d745cbaaca49@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280127T040000
+DTEND;TZID=Asia/Tokyo:20280127T043000
+SUMMARY:Fed decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Fed decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:299743ae2841c3bd@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280127T043000
+DTEND;TZID=Asia/Tokyo:20280127T053000
+SUMMARY:Fed press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Fed press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d7ecf585525906c5@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260909T211500
+DTEND;TZID=Asia/Tokyo:20260909T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ee4e21cf5a3b73a1@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260909T214500
+DTEND;TZID=Asia/Tokyo:20260909T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2af6731330cbb4da@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260930T211500
+DTEND;TZID=Asia/Tokyo:20260930T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aa8426f1125b6ff8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260930T214500
+DTEND;TZID=Asia/Tokyo:20260930T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3c8cc81456f1e77d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261125T221500
+DTEND;TZID=Asia/Tokyo:20261125T224500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4184fdd14c30f389@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261125T224500
+DTEND;TZID=Asia/Tokyo:20261125T234500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c9c2e26a5334206b@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270203T221500
+DTEND;TZID=Asia/Tokyo:20270203T224500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b205ec17293cb97a@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270203T224500
+DTEND;TZID=Asia/Tokyo:20270203T234500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9bb1fece05c9084b@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270224T221500
+DTEND;TZID=Asia/Tokyo:20270224T224500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5aa6439f89fe764f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270224T224500
+DTEND;TZID=Asia/Tokyo:20270224T234500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b257a4609245718c@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270407T211500
+DTEND;TZID=Asia/Tokyo:20270407T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cc05cade64375764@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270407T214500
+DTEND;TZID=Asia/Tokyo:20270407T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2d4e92c2ee4b8850@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270519T211500
+DTEND;TZID=Asia/Tokyo:20270519T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e5dd39b180fd2c02@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270519T214500
+DTEND;TZID=Asia/Tokyo:20270519T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:097b0a7d30d1fdb5@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270623T211500
+DTEND;TZID=Asia/Tokyo:20270623T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cf42fb60d36b24a1@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270623T214500
+DTEND;TZID=Asia/Tokyo:20270623T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a38b2dc7264551f7@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270908T211500
+DTEND;TZID=Asia/Tokyo:20270908T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fd94474431369af8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270908T214500
+DTEND;TZID=Asia/Tokyo:20270908T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e0c8a17c17d82591@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270929T211500
+DTEND;TZID=Asia/Tokyo:20270929T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1c2a9e561fe3bb7a@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20270929T214500
+DTEND;TZID=Asia/Tokyo:20270929T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cfc7acd082d63902@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20271124T221500
+DTEND;TZID=Asia/Tokyo:20271124T224500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5e66d8d975302600@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20271124T224500
+DTEND;TZID=Asia/Tokyo:20271124T234500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:686be210ada7851d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280202T221500
+DTEND;TZID=Asia/Tokyo:20280202T224500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6610045b262bbf15@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280202T224500
+DTEND;TZID=Asia/Tokyo:20280202T234500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:021012e7c070e29d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280223T221500
+DTEND;TZID=Asia/Tokyo:20280223T224500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:582e4aec4b29485f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280223T224500
+DTEND;TZID=Asia/Tokyo:20280223T234500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8bf1c16814195972@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280405T211500
+DTEND;TZID=Asia/Tokyo:20280405T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:158d0ccd908a2c0f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280405T214500
+DTEND;TZID=Asia/Tokyo:20280405T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6bcda9ed9ee37232@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280524T211500
+DTEND;TZID=Asia/Tokyo:20280524T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:078d8b03838fac2b@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280524T214500
+DTEND;TZID=Asia/Tokyo:20280524T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2c452e9b9b74f593@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280621T211500
+DTEND;TZID=Asia/Tokyo:20280621T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4e7f28e9f0c06079@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280621T214500
+DTEND;TZID=Asia/Tokyo:20280621T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1975f54a03cc1203@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280906T211500
+DTEND;TZID=Asia/Tokyo:20280906T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b22d7061a4d6c34d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280906T214500
+DTEND;TZID=Asia/Tokyo:20280906T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2f988688892dae87@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280927T211500
+DTEND;TZID=Asia/Tokyo:20280927T214500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4c15982fd86ac202@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20280927T214500
+DTEND;TZID=Asia/Tokyo:20280927T224500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:908d20aacdd13ce4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20281122T221500
+DTEND;TZID=Asia/Tokyo:20281122T224500
+SUMMARY:ECB decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:ECB decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f74782e053ae5d9f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20281122T224500
+DTEND;TZID=Asia/Tokyo:20281122T234500
+SUMMARY:ECB press conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:ECB press conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d13ee5e559e90bb4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260203T123000
+DTEND;TZID=Asia/Tokyo:20260203T130000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8ec7372d75b51834@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260203T133000
+DTEND;TZID=Asia/Tokyo:20260203T143000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e29a52cb8d61a186@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260209T123000
+DTEND;TZID=Asia/Tokyo:20260209T130000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e0a06405a68e5b29@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260209T133000
+DTEND;TZID=Asia/Tokyo:20260209T143000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4edb7736c40b7460@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260317T123000
+DTEND;TZID=Asia/Tokyo:20260317T130000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:56e7638e40ce0f08@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260317T133000
+DTEND;TZID=Asia/Tokyo:20260317T143000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5b2d36d4b448034e@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260323T123000
+DTEND;TZID=Asia/Tokyo:20260323T130000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e4ab718023c2acd6@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260323T133000
+DTEND;TZID=Asia/Tokyo:20260323T143000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:52a265bf245e11fd@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260504T133000
+DTEND;TZID=Asia/Tokyo:20260504T140000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:82635b2aae8a2a9d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260504T143000
+DTEND;TZID=Asia/Tokyo:20260504T153000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:99c2308b1bfdbe4c@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260505T133000
+DTEND;TZID=Asia/Tokyo:20260505T140000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:201cf86d3c325cf4@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260505T143000
+DTEND;TZID=Asia/Tokyo:20260505T153000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8964fe60f3458f02@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260616T133000
+DTEND;TZID=Asia/Tokyo:20260616T140000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f5e0049532c09dca@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260616T143000
+DTEND;TZID=Asia/Tokyo:20260616T153000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ab8dd6d97f771c7c@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260622T133000
+DTEND;TZID=Asia/Tokyo:20260622T140000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dedf0dba4e1308bf@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260622T143000
+DTEND;TZID=Asia/Tokyo:20260622T153000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d36396d05911a73f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260810T133000
+DTEND;TZID=Asia/Tokyo:20260810T140000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0cfaf460ce165892@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260810T143000
+DTEND;TZID=Asia/Tokyo:20260810T153000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0b08b2f90ef58073@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260811T133000
+DTEND;TZID=Asia/Tokyo:20260811T140000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:73f747839743148b@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260811T143000
+DTEND;TZID=Asia/Tokyo:20260811T153000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:21eb62a347b0d244@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260928T133000
+DTEND;TZID=Asia/Tokyo:20260928T140000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:66613370a62a10b3@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260928T143000
+DTEND;TZID=Asia/Tokyo:20260928T153000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1313d0a5a3eb2436@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260929T133000
+DTEND;TZID=Asia/Tokyo:20260929T140000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7b1e3746e886921d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20260929T143000
+DTEND;TZID=Asia/Tokyo:20260929T153000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d713ebdf4beee85f@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261102T123000
+DTEND;TZID=Asia/Tokyo:20261102T130000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9145239a741592df@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261102T133000
+DTEND;TZID=Asia/Tokyo:20261102T143000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:036dd9b638198eb8@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261103T123000
+DTEND;TZID=Asia/Tokyo:20261103T130000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:10ee43f426251a9d@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261103T133000
+DTEND;TZID=Asia/Tokyo:20261103T143000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3dd8f738fc64f880@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261208T123000
+DTEND;TZID=Asia/Tokyo:20261208T130000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b5d7d72d49c80d40@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261208T133000
+DTEND;TZID=Asia/Tokyo:20261208T143000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:59231d5bcfc80b98@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261214T123000
+DTEND;TZID=Asia/Tokyo:20261214T130000
+SUMMARY:RBA decision
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:RBA decision
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d89ff0f2297c6468@mxm-central-banks
+DTSTAMP:20260729T132259Z
+DTSTART;TZID=Asia/Tokyo:20261214T133000
+DTEND;TZID=Asia/Tokyo:20261214T143000
+SUMMARY:RBA media conference
+DESCRIPTION:Official schedule converted to JST
+URL:https://www.rba.gov.au/schedules-events/board-meeting-schedules.html
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:RBA media conference
+END:VALARM
+END:VEVENT
+END:VCALENDAR
