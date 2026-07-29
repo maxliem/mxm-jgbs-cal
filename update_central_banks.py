@@ -272,84 +272,65 @@ def parse_rba() -> list[datetime]:
     meetings: list[datetime] = []
     current_year = datetime.now(UTC).year
 
-    for table in soup.find_all("table"):
-        header_row = table.find("tr")
-
-        if header_row is None:
-            continue
-
-        headers = [
-            normalise_spaces(cell.get_text(" ", strip=True)).lower()
-            for cell in header_row.find_all(["th", "td"])
-        ]
-
-        monetary_column = next(
-            (
-                index
-                for index, header in enumerate(headers)
-                if "monetary policy board" in header
-            ),
-            None,
+    for heading in soup.find_all(["h2", "h3"]):
+        heading_text = normalise_spaces(
+            heading.get_text(" ", strip=True)
         )
 
-        if monetary_column is None:
-            continue
-
-        heading = table.find_previous(
-            ["h1", "h2", "h3", "h4", "caption"]
+        year_match = re.search(
+            r"Board meeting schedules\s+(20\d{2})",
+            heading_text,
+            flags=re.I,
         )
 
-        year = None
-
-        while heading is not None:
-            match = re.search(
-                r"Board meeting schedules\s+(20\d{2})",
-                normalise_spaces(
-                    heading.get_text(" ", strip=True)
-                ),
-                flags=re.I,
-            )
-
-            if match:
-                year = int(match.group(1))
-                break
-
-            heading = heading.find_previous(
-                ["h1", "h2", "h3", "h4", "caption"]
-            )
-
-        if year is None or year < current_year:
+        if not year_match:
             continue
 
-        for row in table.find_all("tr")[1:]:
+        year = int(year_match.group(1))
+
+        if year < current_year:
+            continue
+
+        table = heading.find_next("table")
+
+        if table is None:
+            continue
+
+        rows = table.find_all("tr")
+
+        for row in rows[1:]:
             cells = row.find_all(["th", "td"])
 
-            if monetary_column >= len(cells):
+            # Official RBA table:
+            # cells[0] = month
+            # cells[1] = Monetary Policy Board
+            # cells[2] = Payments System Board
+            if len(cells) < 2:
                 continue
 
-            value = normalise_spaces(
-                cells[monetary_column].get_text(" ", strip=True)
+            monetary_policy_text = normalise_spaces(
+                cells[1].get_text(" ", strip=True)
             )
 
             match = re.search(
                 r"(\d{1,2})\s*[\-–—]\s*(\d{1,2})\s+("
                 + "|".join(MONTHS.keys())
                 + r")\b",
-                value,
+                monetary_policy_text,
                 flags=re.I,
             )
 
             if not match:
                 continue
 
-            decision_day = int(match.group(2))
+            second_day = int(match.group(2))
             month = MONTHS[match.group(3).lower()]
 
             meetings.append(
                 datetime(
                     year,
                     month,
-                    decision_day,
+                    second_day,
                     14,
                     30,
                     tzinfo=SYDNEY,
