@@ -1,8 +1,8 @@
-name: Update JGB Calendar
+name: Update Calendar Feeds
 
 on:
   schedule:
-    - cron: "0 21 * * *"
+    - cron: "0 21 * * *"  # 06:00 JST daily
   workflow_dispatch:
 
 permissions:
@@ -11,18 +11,33 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - run: pip install requests beautifulsoup4
-      - run: python update_calendar.py
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
 
-      - run: |
+      - name: Generate JGB calendar
+        run: python update_calendar.py
+
+      - name: Generate central-bank calendar
+        run: python update_central_banks.py
+
+      - name: Commit updated feeds
+        run: |
           git config user.name "bot"
           git config user.email "bot@bot.com"
-          git add calendar.ics
-          git commit -m "update" || echo "no change"
-          git push
+
+          git add calendar.ics central_banks.ics
+
+          if git diff --cached --quiet; then
+            echo "No calendar changes"
+          else
+            git commit -m "Update calendar feeds"
+            git push
+          fi
