@@ -160,6 +160,25 @@ def parse_fed() -> list[datetime]:
             meetings.append(decision)
 
     meetings = unique_sorted(meetings)
+    # Remove accidental first-day entry when two consecutive
+# January dates were parsed for the same FOMC meeting.
+filtered: list[datetime] = []
+
+for meeting in meetings:
+    if (
+        meeting.month == 1
+        and any(
+            other.year == meeting.year
+            and other.month == 1
+            and other.day == meeting.day + 1
+            for other in meetings
+        )
+    ):
+        continue
+
+    filtered.append(meeting)
+
+meetings = filtered
 
     print("Fed parsed dates:", flush=True)
     for meeting in meetings:
@@ -247,25 +266,32 @@ def parse_ecb() -> list[datetime]:
 # ============================================================
 
 def parse_rba() -> list[datetime]:
-    """
-    Parse only the RBA Monetary Policy Board column.
-    The decision occurs on the second meeting day at 14:30 Sydney time.
-    """
     soup = BeautifulSoup(fetch(RBA_URL), "html.parser")
 
     meetings: list[datetime] = []
     current_year = datetime.now(UTC).year
 
     for table in soup.find_all("table"):
+        header_row = table.find("tr")
+
+        if header_row is None:
+            continue
+
         headers = [
-            normalise_spaces(th.get_text(" ", strip=True)).lower()
-            for th in table.find_all("th")
+            normalise_spaces(cell.get_text(" ", strip=True)).lower()
+            for cell in header_row.find_all(["th", "td"])
         ]
 
-        if not any(
-            "monetary policy board" in header
-            for header in headers
-        ):
+        monetary_column = next(
+            (
+                index
+                for index, header in enumerate(headers)
+                if "monetary policy board" in header
+            ),
+            None,
+        )
+
+        if monetary_column is None:
             continue
 
         heading = table.find_previous(
@@ -275,18 +301,16 @@ def parse_rba() -> list[datetime]:
         year = None
 
         while heading is not None:
-            heading_text = normalise_spaces(
-                heading.get_text(" ", strip=True)
-            )
-
-            year_match = re.search(
+            match = re.search(
                 r"Board meeting schedules\s+(20\d{2})",
-                heading_text,
+                normalise_spaces(
+                    heading.get_text(" ", strip=True)
+                ),
                 flags=re.I,
             )
 
-            if year_match:
-                year = int(year_match.group(1))
+            if match:
+                year = int(match.group(1))
                 break
 
             heading = heading.find_previous(
@@ -296,30 +320,21 @@ def parse_rba() -> list[datetime]:
         if year is None or year < current_year:
             continue
 
-        rows = table.find_all("tr")
-
-        for row in rows:
+        for row in table.find_all("tr")[1:]:
             cells = row.find_all(["th", "td"])
 
-            # Expected columns:
-            # 0 Month
-            # 1 Monetary Policy Board
-            # 2 Payments System Board
-            if len(cells) < 2:
+            if monetary_column >= len(cells):
                 continue
 
-            monetary_policy_text = normalise_spaces(
-                cells[1].get_text(" ", strip=True)
+            value = normalise_spaces(
+                cells[monetary_column].get_text(" ", strip=True)
             )
 
             match = re.search(
-                r"(\d{1,2})"
-                r"\s*[\-–—]\s*"
-                r"(\d{1,2})"
-                r"\s+("
+                r"(\d{1,2})\s*[\-–—]\s*(\d{1,2})\s+("
                 + "|".join(MONTHS.keys())
                 + r")\b",
-                monetary_policy_text,
+                value,
                 flags=re.I,
             )
 
@@ -329,8 +344,8 @@ def parse_rba() -> list[datetime]:
             decision_day = int(match.group(2))
             month = MONTHS[match.group(3).lower()]
 
-            try:
-                decision = datetime(
+            meetings.append(
+                datetime(
                     year,
                     month,
                     decision_day,
@@ -338,10 +353,7 @@ def parse_rba() -> list[datetime]:
                     30,
                     tzinfo=SYDNEY,
                 )
-            except ValueError:
-                continue
-
-            meetings.append(decision)
+            )
 
     meetings = unique_sorted(meetings)
 
