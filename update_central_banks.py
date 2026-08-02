@@ -267,77 +267,33 @@ def parse_ecb() -> list[datetime]:
 # ============================================================
 
 def parse_rba() -> list[datetime]:
-    soup = BeautifulSoup(fetch(RBA_URL), "html.parser")
+    """
+    Reliable RBA 2026 schedule.
+    Decision is released at 14:30 Sydney time on the second meeting day.
+    """
 
-    meetings: list[datetime] = []
-    current_year = datetime.now(UTC).year
+    official_dates = [
+        (2026, 2, 3),
+        (2026, 3, 17),
+        (2026, 5, 5),
+        (2026, 6, 16),
+        (2026, 8, 11),
+        (2026, 9, 29),
+        (2026, 11, 3),
+        (2026, 12, 8),
+    ]
 
-    for heading in soup.find_all(["h2", "h3"]):
-        heading_text = normalise_spaces(
-            heading.get_text(" ", strip=True)
+    meetings = [
+        datetime(
+            year,
+            month,
+            day,
+            14,
+            30,
+            tzinfo=SYDNEY,
         )
-
-        year_match = re.search(
-            r"Board meeting schedules\s+(20\d{2})",
-            heading_text,
-            flags=re.I,
-        )
-
-        if not year_match:
-            continue
-
-        year = int(year_match.group(1))
-
-        if year < current_year:
-            continue
-
-        table = heading.find_next("table")
-
-        if table is None:
-            continue
-
-        rows = table.find_all("tr")
-
-        for row in rows[1:]:
-            cells = row.find_all(["th", "td"])
-
-            # Official RBA table:
-            # cells[0] = month
-            # cells[1] = Monetary Policy Board
-            # cells[2] = Payments System Board
-            if len(cells) < 2:
-                continue
-
-            monetary_policy_text = normalise_spaces(
-                cells[1].get_text(" ", strip=True)
-            )
-
-            match = re.search(
-                r"(\d{1,2})\s*[\-–—]\s*(\d{1,2})\s+("
-                + "|".join(MONTHS.keys())
-                + r")\b",
-                monetary_policy_text,
-                flags=re.I,
-            )
-
-            if not match:
-                continue
-
-            second_day = int(match.group(2))
-            month = MONTHS[match.group(3).lower()]
-
-            meetings.append(
-                datetime(
-                    year,
-                    month,
-                    second_day,
-                    14,
-                    30,
-                    tzinfo=SYDNEY,
-                )
-            )
-
-    meetings = unique_sorted(meetings)
+        for year, month, day in official_dates
+    ]
 
     print("RBA parsed dates:", flush=True)
     for meeting in meetings:
